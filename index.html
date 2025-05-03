@@ -8,14 +8,15 @@
 </head>
 <body>
   <div class="container">
-    <h1>How Are You Feeling Today?</h1>
-    
+    <h1>Take a Moment for Yourself</h1>
+    <p class="quote">“You made it through today. That’s enough.”</p>
+
     <div class="mood-picker">
-      <button class="mood-btn" data-mood="happy">😄</button>
-      <button class="mood-btn" data-mood="neutral">😐</button>
-      <button class="mood-btn" data-mood="sad">😢</button>
-      <button class="mood-btn" data-mood="angry">😠</button>
-      <button class="mood-btn" data-mood="tired">😴</button>
+      <button class="mood-btn" data-mood="happy" title="Feeling happy 😄">😄</button>
+      <button class="mood-btn" data-mood="neutral" title="Feeling okay 😐">😐</button>
+      <button class="mood-btn" data-mood="sad" title="Feeling down 😢">😢</button>
+      <button class="mood-btn" data-mood="angry" title="Feeling frustrated 😠">😠</button>
+      <button class="mood-btn" data-mood="tired" title="Feeling tired 😴">😴</button>
     </div>
 
     <textarea id="journal" placeholder="Write about your day..."></textarea>
@@ -25,6 +26,10 @@
     <h2>Past Entries</h2>
     <div id="entries"></div>
   </div>
+
+  <footer>
+    <p>Built with ❤️ by Dyzu15</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
