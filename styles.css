@@ -10,26 +10,32 @@ body {
 
 .container {
   max-width: 520px;
-  margin: 2rem auto;
+  margin: 2.5rem auto;
   padding: 1.5rem;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease;
+  text-align: center;
 }
 
-h1, h2 {
-  text-align: center;
+h1 {
   color: #444;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.quote {
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
 }
 
 .mood-picker {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 0;
   gap: 0.5rem;
-  flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
 .mood-btn {
@@ -39,9 +45,8 @@ h1, h2 {
   border-radius: 10px;
   padding: 0.5rem 0.8rem;
   cursor: pointer;
-  transition: all 0.2s ease;
   flex: 1 1 18%;
-  text-align: center;
+  transition: all 0.2s ease;
 }
 
 .mood-btn:hover {
@@ -51,8 +56,15 @@ h1, h2 {
 
 .mood-btn.selected {
   border: 2px solid #ff7a8a;
-  box-shadow: 0 0 10px #ffcbd4;
+  box-shadow: 0 0 12px #ffcbd4;
   background-color: #fff0f3;
+  animation: bounce 0.2s ease;
+}
+
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
 }
 
 textarea {
@@ -102,10 +114,18 @@ textarea:focus {
   margin-bottom: 0.8rem;
   border-left: 6px solid #ff9ca5;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+  text-align: left;
 }
 
 .entry strong {
   display: block;
   margin-bottom: 0.3rem;
   color: #333;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem;
+  color: #aaa;
 }
